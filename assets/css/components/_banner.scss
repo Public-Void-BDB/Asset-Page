@@ -1,0 +1,96 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.carousel-item {
+    height: 90vh;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:cover;
+    background-size:cover;
+
+    @include mix.laptop-m-styles {
+        height:50vh;
+      }
+
+    .carousel-caption {
+        font-size: var.$font-size-huge;
+        background: rgba(0, 0, 0, 0.548);
+        border-radius: 20px;
+
+        @include mix.laptop-l-styles {
+            font-size:  var.$font-size-base;
+          }
+        h5 {
+            font-family: var.$font-family-base;
+            font-size: var.$heading-size-large;
+            font-weight: var.$font-weight-bold;
+            @include mix.laptop-l-styles {
+                font-size:  var.$heading-size-base;
+              }
+            
+        }
+    }
+  }
+
+  .carousel-container {
+    height: 100vh;
+    @include mix.laptop-m-styles {
+        height: 50vh;
+      }
+  }
+.carousel  {
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+  
+.carousel-control-prev {
+    left: -200px;
+    @include mix.laptop-l-styles {
+        left: -130px;
+      }
+      @include mix.tablet-styles {
+        left: -65px;
+      }
+      @include mix.mobile-l-styles {
+        left: -35px;
+      }
+}
+.carousel-control-prev i{
+    font-size: 40px;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff;
+
+        @include mix.tablet-styles {
+            font-size: 30px;
+          }
+        
+
+}
+
+.carousel-control-next {
+    right: -200px;
+    @include mix.laptop-l-styles {
+        right: -130px;
+      }
+      @include mix.tablet-styles {
+        right: -65px;
+      }
+      @include mix.mobile-l-styles {
+        right: -35px;
+      }
+}
+
+.carousel-control-next i{
+    font-size: 40px;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff;
+    @include mix.tablet-styles {
+        font-size: 30px;
+      }
+
+}

@@ -1,0 +1,48 @@
+@use "../../abstracts/variables" as var;
+@use "../../abstracts/mixins" as mix;
+
+.project1-container {
+        background-image: url('../../media/images/bodybg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    
+    p {
+        font-size: var.$font-size-large;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 8vw;
+        object-fit: cover;
+    }
+
+    .darken-bg {
+        background-color: rgba(0, 0, 0, 0.462)
+    }
+
+    h2 {
+        font-size: var.$heading-size-base;
+        font-family: var.$font-family-headings;
+    }
+
+    .hero-video {
+        height: 800px;
+        width: 100vw;
+        object-fit: fill;
+
+        @include mix.laptop-m-styles {
+            height: 600px;
+          }
+        @include mix.tablet-styles {
+            height: 300px;
+          }
+    }
+
+    .modal-dialog {
+        max-width: 80%;
+    }
+
+    
+}
+
+

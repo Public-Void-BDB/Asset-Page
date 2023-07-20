@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.384);
+
+    .navbar-toggler {
+        @include mix.laptop-m-styles {
+            margin: 0 auto;
+          }
+    }
+
+    
+}
+
+.nav-item {
+    padding-left: 10px;
+    font-family: var.$font-family-headings;
+    font-size: var.$font-size-medium;
+    @include mix.laptop-l-styles {
+        font-size: var.$font-size-base;
+      }
+    
+    &:hover {
+        text-shadow: 
+        0 0 11px #fff,
+        0 0 40px rgb(0, 162, 255),
+        0 0 80px rgb(0, 166, 255),
+    }
+}
+
+.navbar-brand {
+    font-family: var.$font-family-headings;
+    font-size: var.$heading-size-large;
+    @include mix.laptop-l-styles {
+        font-size: var.$heading-size-base;
+      }
+
+      @include mix.laptop-m-styles {
+        font-size: var.$heading-size-small;
+      }
+}
+
+.nav-link-extra {
+    font-size: var.$heading-size-base;
+}

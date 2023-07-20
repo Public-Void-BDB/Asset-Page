@@ -1,0 +1,30 @@
+@use "../../abstracts/variables" as var;
+@use "../../abstracts/mixins" as mix;
+
+.updates-site {
+    height: 80vh;
+    background-image: url('../../media/images/1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+
+    .right-panel {
+        position: sticky;
+        top: 0;
+        height: 100px;
+        
+    }
+}
+
+.update-container {
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 10px;
+    
+}
+
+.related-container {
+    padding: 10px;
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+
+.w-auto {
+  width: auto;
+} 
+
+.strokeme {
+    color: white;
+    text-shadow: -1px -1px 0 #000;
+  }
+
+.neonText {
+    animation: flicker 3s infinite alternate;
+    color: #fff;
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px rgb(0, 0, 0),
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(0, 162, 255),
+        0 0 80px rgb(0, 166, 255),
+        0 0 90px rgb(0, 140, 255),
+        0 0 100px rgb(0, 119, 255),
+        0 0 150px rgb(0, 94, 255);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+  .neonBorder {
+    color: #fff;
+    transition: box-shadow 0.25s;
+
+    &:hover {
+      box-shadow:
+        0 0 4px rgb(0, 0, 0),
+        0 0 11px #fff,
+        0 0 40px rgb(0, 162, 255),
+    }
+  }
+
+  .video-bg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .element-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  

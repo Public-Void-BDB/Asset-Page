@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/js/aos.css" />
+    <script src="https://kit.fontawesome.com/0841462b34.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- NAVBAR -->
+
+<body class="bg-dark body-bg">
+    <video class="video-bg" playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="media/videos/test.mp4" type="video/webm">
+      </video>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/b.danchev22/" target="_blank"><i class="fa-brands fa-instagram nav-link-extra"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/bruno-danchev-5034a7248/" target="_blank"><i class="fa-brands fa-linkedin nav-link-extra"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto font-weight-bold neonText" href="#">Bruno's Projects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-section">Game Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutUs-section">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="container-fluid pt-3">
+        <div class="row carousel-container">
+            <div class="col-10 offset-1">
+                <div id="carouselExampleIndicators" class="carousel  border border-primary rounded slide my-carousel element-shadow"
+                    data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item  active rounded" style="background-image: url('media/images/geotrio1.png');">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>GeoTrio</h5>
+                                <p>Sliding through the clouds.</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/void1.png');background-size: cover;">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>New Life</h5>
+                                <p>Planet Elysium</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/geotrio2.png')">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>GeoTrio</h5>
+                                <p>Left, right, dodge!</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/void2.png')">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>New Life</h5>
+                                <p>A good day for planetfall</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="fa-solid fa-angles-left neon-noflicker"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="container-fluid mt-5 strokeme projects" id="projects-section">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="font-weight-bold strokeme tint" data-aos="zoom-in" data-aos-duration="1500">Game Projects</h2>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-8">
+                <div class="card w-100 mx-auto border-dark element-shadow" data-aos="fade-right" data-aos-duration="1500"
+                    data-aos-easing="ease-out-sine">
+                    <a href='project1.html'><img src="media/images/geotrio1.png" class="card-img-top" alt="..."></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-body bg-project-text h-100 element-shadow d-flex flex-column "data-aos="fade-left" data-aos-duration="1500">
+                    <h5 class="card-title font-weight-bold text-warning">GeoTrio</h5>
+                    <p class="card-text">
+                        Are you looking for a challenge? This game will test your patience, reflexes and commitment to completing a level. The player spawns as a cube and his only objective is to avoid the obstacles placed in front of him. Simple game controls, but a fun, challenging game.
+                        <span><a href="project1.html"> See more</a></span>
+                    </p>
+                    <br>
+                    <br>
+                    <a class="mx-auto" href="https://play.google.com/store/apps/details?id=com.PublicVoid.GeoTrio&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i> Download now from Play Store </a>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card-body bg-project-text element-shadow h-100"data-aos="fade-right" data-aos-duration="1500">
+                    <h5 class="card-title font-weight-bold text-warning">New Life</h5>
+                    <p class="card-text">Prepare yourself for a new beginning among the stars. Take the role of a marine in a distant solar system fight for the survival of your race.
+                        New Life is a project with an aim to create a unique science-fiction experience filled with action, mystery, tragedy and storytelling.
+                        The game is in development and a playable demo will be out soon.</p>
+                        <span><a href="project2.html"> See more</a></span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card ml-auto w-100 border-dark element-shadow" data-aos="fade-left" data-aos-duration="1500"
+                    data-aos-easing="ease-out-sine">
+                    <a href="project2.html"><img src="media/images/void2.png" class="card-img-top" alt="..."></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="container-fluid about-us strokeme mb-3" id="aboutUs-section">
+        <div class="row">
+            <div class="col my-5 text-center">
+                <h2 class="font-weight-bold strokeme tint" data-aos="zoom-in" data-aos-duration="1500">About</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <div class="card element-shadow mb-3 ml-auto bg-dark"data-aos="flip-right"
+                    data-aos-duration="2000">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 text-center">
+                            <img class="w-100"
+                                src="media/images/bruno.jpg"
+                                alt="...">
+                                <p class="font-weight-bold">Software Engineer</p>
+                        </div>
+                        <div class="col-md-8 element-shadow">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold mb-0">Bruno Danchev</h5>
+                                <p><i>b.danchev.info@gmail.com</i></p>
+                                <p class="card-text"><i>Skopje, North Macedonia</i></p>
+                                <p class="card-text">Im a young aspiring game developer who dreams of creating games that push the boundaries of what is possible and inspire players to think outside the box.
+                                    It started out as a small hobby but I swiftly became passionate regarding game development and all of its aspects.</p>
+                                <p class="card-text">There is just something really pleasant about bringing your imagination and stories into life through video games.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
