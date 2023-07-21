@@ -20,18 +20,10 @@
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/b.danchev22/" target="_blank"><i
-                            class="fa-brands fa-instagram nav-link-extra"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/bruno-danchev-5034a7248/" target="_blank"><i
-                            class="fa-brands fa-linkedin nav-link-extra"></i></a>
-                </li>
             </ul>
         </div>
         <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto font-weight-bold neonText" href="#">GeoTrio</a>
+            <a class="navbar-brand mx-auto font-weight-bold neonText" href="#">Nature Pack</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +34,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#projects-section">Game Projects</a>
+                    <a class="nav-link" href="index.html#projects-section">Asset Packs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#aboutUs-section">About</a>
@@ -50,9 +42,55 @@
             </ul>
         </div>
     </nav>
-    <video class="hero-video" playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-        <source src="media/videos/trailerGeoTrio.mp4" type="video/webm">
-    </video>
+    <!-- CAROUSEL -->
+    <div class="container-fluid pt-3">
+        <div class="row carousel-container">
+            <div class="col-10 offset-1">
+                <div id="carouselExampleIndicators" class="carousel  border border-primary rounded slide my-carousel element-shadow"
+                    data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item  active rounded" style="background-image: url('media/images/FrontPictureEdited.jpg');">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>Low-Poly Nature Pack</h5>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/natureDark.png');background-size: cover;">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>Simple Fire VFX</h5>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/Picture\ 6.png')">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>6 sets of different trees!</h5>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item rounded" style="background-image: url('media/images/natureBridge.png')">
+                            <div class="carousel-caption mx-auto w-50 d-none d-md-block strokeme">
+                                <h5>Adjustable Water Shader with foam</h5>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="fa-solid fa-angles-left neon-noflicker"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid p-0 project1-bg">
         <div class="row">
             <div class="col-12 text-center">
@@ -61,33 +99,78 @@
             <div class="col-10 offset-1 d-flex flex-wrap">
                 <div class="row">
                     <div class="col-lg-4 pt-4">
-                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicOne">
-                            <img src="media/images/geotrio1.png" class="w-100">
-                        </button>
-                    </div>
-                    <div class="col-lg-4 pt-4">
-                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicTwo">
-                            <img src="media/images/geotrio2.png" class="w-100">
-                        </button>
-                    </div>
-                    <div class="col-lg-4 pt-4">
-                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicFour">
-                            <img src="media/images/geotrio4.jpg" class="w-100">
-                        </button>
-                    </div>
-                    <div class="col-lg-4 pt-4">
-                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicFive">
-                            <img src="media/images/geotrio5.jpg" class="w-100">
-                        </button>
-                    </div>
-                    <div class="col-lg-4 pt-4">
-                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicSix">
-                            <img src="media/images/geotrio6.jpg" class="w-100">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/FrontPicture(1).png" class="w-100">
                         </button>
                     </div>
                     <div class="col-lg-4 pt-4">
                         <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
-                            <img src="media/images/geotrio8.jpg" class="w-100">
+                            <img src="media/images/natureDark.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/natureBridge.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 13.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicOne">
+                            <img src="media/images/Picture 3.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicTwo">
+                            <img src="media/images/Picture 5.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicFour">
+                            <img src="media/images/Picture 6.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicFive">
+                            <img src="media/images/Picture 7.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicSix">
+                            <img src="media/images/Picture 8.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 9.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 10.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 11.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 12.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 13.png" class="w-100">
+                        </button>
+                    </div>
+                    <div class="col-lg-4 pt-4">
+                        <button type="button" class="btn p-0" data-toggle="modal" data-target="#modalPicEight">
+                            <img src="media/images/Picture 14.png" class="w-100">
                         </button>
                     </div>
                 </div>
@@ -150,8 +233,8 @@
         <div class="row py-5">
             <div class="col-lg-6 offset-lg-3 col-10 offset-1">
                 <div class="card-body bg-project-text element-shadow h-100 text-center">
-                    <p class="card-text text-white"> Are you looking for a challenge? This game will test your patience, reflexes and commitment to completing a level. The player spawns as a cube and his only objective is to avoid the obstacles placed in front of him. Simple game controls, but a fun, challenging game.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.PublicVoid.GeoTrio&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i> Download now from Play Store </a>
+                    <p class="card-text text-white"> Contatct us on discord if you have any questions! <br>https://discord.gg/f8yXVkYtfG</p>
+                    <!-- <a href="https://play.google.com/store/apps/details?id=com.PublicVoid.GeoTrio&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i> Download now from Play Store </a> -->
                 </div>
             </div>
         </div>
